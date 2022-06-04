@@ -204,6 +204,7 @@ body {
   border-radius: 2rem;
   background-color: var(--purple-medium);
   padding: 2rem 3rem;
+  cursor: pointer;
 }
 
 #faq article.boxQuestions:hover {
@@ -217,11 +218,16 @@ body {
 }
 
 #faq p.answers {
+  display:none;
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--white);
   line-height: 150%;
   margin-top: 1rem;
+}
+
+#faq .boxQuestions.active p.answers {
+  display: block;
 }
 
 /* ----------------------------FORM------------------------------ */
