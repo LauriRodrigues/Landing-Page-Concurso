@@ -202,7 +202,7 @@ body {
 #faq article.boxQuestions {
   border:2px solid var(--pink);
   border-radius: 2rem;
-  background-color: var(--purple-medium);
+  background-color: var(--white);
   padding: 2rem 3rem;
   cursor: pointer;
 }
@@ -219,9 +219,9 @@ body {
 
 #faq p.answers {
   display:none;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.6rem;
-  color: var(--white);
+  color: var(--pink);
   line-height: 150%;
   margin-top: 1rem;
 }
@@ -248,3 +248,53 @@ body {
   margin-block: 3rem;
 }
 
+#form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple-light);
+}
+
+legend {
+  font-family: 'Oswald', sans-serif;
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.input {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: var(--purple-dark);
+  padding: .2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  border-color: var(--pink);
+ }
+ 
+ .input::placeholder {
+  color: var(--purple-dark);
+  font-weight: 700;
+ }
+ 
+ .input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+ }
+ 
+ label {
+   color: var(--purple-dark);
+   font-weight: 700;
+ }
+
+ 

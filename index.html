@@ -112,12 +112,45 @@
       <h3>Não perca essa oportunidade de dar o próximo passo rumo à sua carreira dos sonhos.</h3>
       <h4>Embarque nesse foguete!</h4>
 
+      <form action="" method="" id="subscription">
+        <fieldset class="formulario">
+          <legend>Inscreva-se</legend>
 
+          <div class="formName">
+            <input class="input" placeholder="Nome" type="text" name="name" id="name" required>
+          </div>
+
+          <div class="formEmail">
+            <input class="input" placeholder="E-mail" type="email" name="email" id="email" required>
+          </div>
+
+          <div class="formSexo">
+            <label>Se identifica como do sexo feminino?</label> <br> <br>
+            <label>
+              <input type="radio" name="sexo" value="yes" checked>Sim
+            </label>
+            <label>
+              <input type="radio" name="sexo" value="no">Não
+            </label>
+          </div>
+
+          <div class="formXp">
+           <label for="xp">Qual sua experiência com programação?</label> <br> <br>
+           <select id="xp">
+            <option selected disabled value="">Selecione</option>
+            <option value="0-6">0 à 6 meses</option>
+            <option value="6-12">6 meses à 1 ano</option>
+            <option value="12+">Mais de 1 ano</option>
+           </select>
+          </div>
+        
+          <button type="submit" class="button" form="subscription" name="subButton"autofocus>Inscrever-se</button>
+        </fieldset>
+      </form>
    </div>
   </section>
   
   <footer>
-  
   </footer>
 
   <script src="./index.js"></script>
