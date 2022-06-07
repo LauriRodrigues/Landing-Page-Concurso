@@ -258,13 +258,13 @@ body {
   background-color: var(--purple-light);
 }
 
-legend {
+#form legend {
   font-family: 'Oswald', sans-serif;
   color: var(--white);
   font-size: 3rem;
 }
 
-.input {
+#form .input {
   line-height: 28px;
   border: 2px solid transparent;
   border-bottom-color: var(--purple-dark);
@@ -275,26 +275,78 @@ legend {
   transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
  }
  
- .input:focus, input:hover {
+ #form .input:focus, input:hover {
   outline: none;
   padding: .2rem 1rem;
   border-radius: 1rem;
   border-color: var(--pink);
  }
  
- .input::placeholder {
+ #form .input::placeholder {
   color: var(--purple-dark);
   font-weight: 700;
  }
  
- .input:focus::placeholder {
+ #form .input:focus::placeholder {
   opacity: 0;
   transition: opacity .3s;
  }
  
- label {
+ #form label {
    color: var(--purple-dark);
    font-weight: 700;
  }
 
- 
+#form .checkbox {
+  padding-inline: 1.5rem;
+}
+
+ #form select {
+   border: 2px solid var(--purple-dark);
+   padding: 0.5rem;
+   color: var(--purple-dark);
+ }
+
+ #form select:focus {
+  border: 2px solid var(--pink);
+  padding: 0.5rem;
+  color: var(--purple-dark);
+}
+
+/* ----------------------------FOOTER------------------------------ */
+
+
+#footer #contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+}
+
+#footer #conectaelasContact, #footer #rocketseatContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .contactIcons {
+  display:flex;
+  flex-direction: row;
+  gap: 1.5rem
+}
+
+#footer .contactIcons a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#footer p {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--pink);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom:3rem;
+}
