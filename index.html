@@ -11,10 +11,39 @@
   <title>Concurso Monte uma landing page de sucesso</title>
 </head>
 
-<body>
+<body onscroll="showNavOnScroll()">
 
   <header>
+    
+      <nav id="navigation" class="">
+        <div class="wrapper">
+          <a class="logo" href="#home">
+            <img src="./assets/Logo-Header.png" alt="Logo Conecta Elas e Rocketseat">
+          </a>
 
+          <div class="menu">
+            <ul>
+              <li><a onclick="closeMenu()" href="#home">Início</a></li>
+              <li><a onclick="closeMenu()" href="#scholarships">Bolsas</a></li>
+              <li><a onclick="closeMenu()" href="#faq">FAQ</a></li>
+              <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+            </ul>
+            <a onclick="closeMenu()" id="buttonMenu" class="button" href="#form">Inscreva-se</a>
+          </div>
+ 
+          <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+            <img id="openMenuButton" src="./assets/open-menu.svg" alt="Botão de abrir o menu"> 
+          </button>
+
+          <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+          </button>
+          
+        </div>
+      </nav>
+   
   </header>
 
   <section class="wrapper" id="home">
@@ -150,7 +179,7 @@
    </div>
   </section>
   
-  <footer id="footer">
+  <footer id="contact">
     <div class="wrapper">
       <div id="contactBox">
         <div id="conectaelasContact">
