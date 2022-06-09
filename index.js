@@ -11,6 +11,12 @@ answers.forEach((event) => {
   });
 });
 
+function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+
 function showNavOnScroll() {
   if (scrollY>0) {
     document.querySelector('#navigation').classList.add('scroll') 
@@ -18,8 +24,12 @@ function showNavOnScroll() {
   document.querySelector('#navigation').classList.remove('scroll') 
 }
 
-showNavOnScroll()
-
+function showBackToTopButtonOnScroll() {
+  if (scrollY>550) {
+    backToTopButton.classList.add('show') // para add a class scroll na tag nav
+  } else 
+      backToTopButton.classList.remove('show') // para remover a class scroll na tag nav
+}
 
 function openMenu () {
   document.body.classList.add('menu-expanded')
@@ -28,3 +38,4 @@ function openMenu () {
 function closeMenu () {
   document.body.classList.remove('menu-expanded')
 }
+

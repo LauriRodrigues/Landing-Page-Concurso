@@ -11,7 +11,7 @@
   <title>Concurso Monte uma landing page de sucesso</title>
 </head>
 
-<body onscroll="showNavOnScroll()">
+<body onscroll="onScroll()">
 
   <header>
     
@@ -48,7 +48,7 @@
 
   <section class="wrapper" id="home">
     <h1>Concurso Monte uma Landing Page de Sucesso</h1>
-    <p class="home">A Conecta Elas em parceria com a Rocketseat estão oferecendo 5 bolsas de estudos da trilha Ignite para as 5 devs que entregarem as melhores landing pages. Não fique de fora, participe e dê o próximo passo rumo ao mercado de trabalho.</p>
+    <p class="home">A Conecta Elas em parceria com a Rocketseat estão oferecendo 5 bolsas de estudos da trilha Ignite para as 5 devs que entregarem as melhores landing pages. Receba 3 aulas gratuitas que te darão a base necessária para construir seu projeto. Não fique de fora, participe e dê o próximo passo rumo ao mercado de trabalho.</p>
     <a class="button" href="#form">Inscreva-se</a>
     <img 
        src="./assets/Img-Home.png"
@@ -100,38 +100,59 @@
      <h2>FAQ</h2>
     
      <article class="boxQuestions">
-        <h4 class="questions">Quem pode se inscrever nesse concurso?</h4>
+        <div class="questionsAndButton">
+          <h4 class="questions">Quem pode se inscrever nesse concurso?</h4>
+          <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
         <p class="answers">Qualquer pessoa que se identifique como do sexo feminino e tenha conhecimentos básicos em HTML, CSS e JS.</p>
      </article>
 
      <article class="boxQuestions">
-        <h4 class="questions">Quais são os pré-requisitos da landing-page?</h4>
+        <div class="questionsAndButton">
+          <h4 class="questions">Quais são os pré-requisitos da landing-page?</h4>
+          <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
         <p class="answers">Estar no formato de uma landing page (página estática), seguir o objetivo (landind page de divulgação do concurso), resolver o desafio que é a criação da página e captura de leads, ter acessibilidade. </p>
      </article>
     
      <article class="boxQuestions">
-      <h4 class="questions">O que será avaliado?</h4>
-      <p class="answers">Organização do código, seu conhecimento em HTML, CSS e JS, Estruturação da landing page, se o objetivo foi cumprido e a criatividade. Diferencial: Banco de dados com as informações colocadas no formulário, validação dos campos de formulário em Javascript.</p>
+        <div class="questionsAndButton">
+           <h4 class="questions">O que será avaliado?</h4>
+           <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
+        <p class="answers">Organização do código, seu conhecimento em HTML, CSS e JS, Estruturação da landing page, se o objetivo foi cumprido e a criatividade. Diferencial: Banco de dados com as informações colocadas no formulário, validação dos campos de formulário em Javascript.</p>
      </article>
     
      <article class="boxQuestions">
-      <h4 class="questions">O que não é permitido na criação da página?</h4>
-      <p class="answers">Uso de bibliotecas ou frameworks, copiar código pronto da internet, copiar de outro participante</p>
+        <div class="questionsAndButton">
+           <h4 class="questions">O que não é permitido na criação da página?</h4>
+           <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
+        <p class="answers">Uso de bibliotecas ou frameworks, copiar código pronto da internet, copiar de outro participante</p>
      </article>
      
      <article class="boxQuestions">
-      <h4 class="questions">Qual o prazo de entrega do código?</h4>
-      <p class="answers">O código deve ser entregue até o dia 23 de Junho.</p>
+        <div class="questionsAndButton">
+           <h4 class="questions">Qual o prazo de entrega do código?</h4>
+           <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
+        <p class="answers">O código deve ser entregue até o dia 23 de Junho.</p>
      </article>
 
      <article class="boxQuestions">
-      <h4 class="questions">Como envio meu código</h4>
-      <p class="answers">Após realizar sua inscrição, você receberá as instruções de entrega do projeto.</p>
+        <div class="questionsAndButton">
+          <h4 class="questions">Como envio meu código?</h4>
+          <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
+        <p class="answers">Após realizar sua inscrição, você receberá as instruções de entrega do projeto.</p>
      </article>
     
      <article class="boxQuestions">
-      <h4 class="questions">Qual a premiação do concurso?</h4>
-      <p class="answers">As cinco melhores landing pages ganharão uma bolsa de 100% para trilhar o curso Ignite da Rocketseat.</p>
+        <div class="questionsAndButton">
+          <h4 class="questions">Qual a premiação do concurso?</h4>
+          <img class="buttonOpenFaq" src="./assets/faq-icon.svg" alt="Botão para abrir resposta">
+        </div>
+        <p class="answers">As cinco melhores landing pages ganharão uma bolsa de 100% para trilhar o curso Ignite da Rocketseat.</p>
      </article>
 
   </section>
@@ -255,6 +276,14 @@
     <p> <code>< MADE WITH ❤ BY LAURI RODRIGUES /> </code></p>
 
   </footer>
+
+  <a id="backToTopButton" href="#home" onscroll="onScroll()">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#442E78"/>
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+  </a>
 
   <script src="./index.js"></script>
 </body>

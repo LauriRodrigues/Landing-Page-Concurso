@@ -315,8 +315,9 @@ body.menu-expanded nav button {
 
 #faq h4.questions {
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--purple-dark); 
+  text-align: left;
 }
 
 #faq p.answers {
@@ -326,10 +327,27 @@ body.menu-expanded nav button {
   color: var(--pink);
   line-height: 150%;
   margin-top: 1rem;
+  text-align: left;
 }
 
 #faq .boxQuestions.active p.answers {
   display: block;
+}
+
+/* ----------------------------ICON FAQ------------------------ */
+
+#faq div.questionsAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#faq img.buttonOpenFaq {
+  width: 7%;
+}
+
+#faq .boxQuestions.active img {
+  transform: rotate(180deg);
 }
 
 /* ----------------------------FORM------------------------------ */
@@ -453,3 +471,23 @@ body.menu-expanded nav button {
   margin-bottom:3rem;
 }
 
+/* -----------BACK TO TOP------------------------ */
+
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition:200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
