@@ -491,3 +491,137 @@ body.menu-expanded nav button {
 
   transform: translateY(0);
 }
+
+/* -------------RESPONSIVO--------------------------- */
+
+@media (min-width: 1024px) {
+
+  /* ======GERAL======================= */
+
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(1120px, 100%);
+    padding-inline: 5rem;
+  }
+
+
+  /* ======NAVIGATION================== */
+
+    /* ===reset============== */
+
+    nav#navigation .wrapper * {
+      margin: 0;
+      padding: 0;
+      visibility: initial;
+      display: initial;
+      opacity: initial;
+      flex-direction: initial;
+      position: initial;
+      transform: initial;
+      background-color: initial;
+      font-weight: initial;
+      filter: initial;
+    }
+
+    nav#navigation .close-menu,
+    nav#navigation .open-menu {
+      display: none;
+    }
+
+    nav#navigation .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    nav#navigation .menu ul {
+      display: flex;
+      gap:3.2rem;
+      font-size: 2rem;
+    }
+
+    nav#navigation .menu .button {
+      text-decoration: none;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.7rem;
+      border: none;
+      position: relative;
+      color: white;
+      z-index: 1;
+    }
+
+    .button::before {
+      background: var(--purple-medium);
+    }
+
+    nav#navigation .menu li a.active,
+    nav#navigation .menu li a:hover {
+      opacity: 1;
+      font-weight: 700;
+    }
+
+    /* ======HOME================== */
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem
+}
+
+#home .col-a {
+    text-align: left;
+    align-self: center;
+}
+
+#home img {
+  width: 180rem;
+}
+
+/* ======SCHOLARSHIPS================== */
+
+#scholarships .cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+#scholarships .card {
+  width: 30%;
+  flex-grow: 1;
+}
+
+/* ===============FAQ================== */
+
+#faq article.boxQuestions {
+  width: 70%;
+  margin-inline: auto;
+}
+
+#faq img.buttonOpenFaq {
+  width: 4%;
+}
+
+/* ===============FORM================== */
+
+#form h3 {
+  width: 70%;
+  margin-inline: auto;
+}
+
+#form fieldset {
+width: 70%;
+margin-inline: auto;
+}
+
+/* ===============FOOTER================== */
+
+#contact #contactBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
