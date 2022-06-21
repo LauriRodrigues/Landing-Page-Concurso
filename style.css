@@ -624,7 +624,14 @@ margin-inline: auto;
 #contact #contactBox {
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   justify-content: space-around
 }
 
 }
+=======
+  justify-content: space-around; 
+}
+  
+}
+>>>>>>> 1ff1962776ead2930fd7dd43510625bae6fab766
