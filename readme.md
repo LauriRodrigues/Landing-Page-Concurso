@@ -31,9 +31,6 @@
 
 <h4>💻 Desktop </h4>
 
-<img alt="Versão Desktop" title="Desktop" src="./readme/inicioDesktop.png" width="50%">
-<img alt="Versão Desktop" title="Desktop" src="./readme/bolsasDesktop.png" width="50%">
-<img alt="Versão Desktop" title="Desktop" src="./readme/faqDesktop.png" width="50%">
-<img alt="Versão Desktop" title="Desktop" src="./readme/footerDesktop.png" width="50%">
+<img alt="Versão Desktop" title="Desktop" src="./readme/Desktop.png" width="50%">
 
 
