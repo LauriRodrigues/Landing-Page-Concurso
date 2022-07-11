@@ -17,7 +17,7 @@
 </div>
 
 <h2 align=left> 💻 Sobre o projeto </h3>
-<p> Landing page feita para o concurso <strong>"Monte uma Landing Page de Sucesso"</strong> realizado pela Conecta Elas em parceria com a <a href="https://www.rocketseat.com.br/"> <strong>Rocketseat</strong> </a> onde os melhores projetos concorriam a bolsas de 100% do curso Ignite.<p>
+<p> Landing page vencedora do concurso <strong>"Monte uma Landing Page de Sucesso"</strong> realizado pela Conecta Elas em parceria com a <a href="https://www.rocketseat.com.br/"> <strong>Rocketseat</strong> </a> onde os melhores projetos concorriam a bolsas de 100% do curso Ignite.<p>
   
 <h2 align=left> 🛠 Tecnologias utilizadas </h3>
 
